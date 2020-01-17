@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="personal.jayhou.launchmodedemo">
+    <!--<uses-feature android:name="android.hardware.type.watch" />-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="personal.jayhou.launchmodedemo.Activity1"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.Activity1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.Activity2"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.Activity2" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.Activity3"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.Activity3" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.ActivitySingleInstance"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.ACTIVITY_SINGLE_INSTANCE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.ActivitySingleTask"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.ACTIVITY_SINGLE_TASK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.ActivitySingleTask2"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.ACTIVITY_SINGLE_TASK2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.ActivitySingleTop"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.ACTIVITY_SINGLE_TOP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="personal.jayhou.launchmodedemo.StartActivityAsNewTask"
+            android:launchMode="standard">
+            <intent-filter>
+                <action android:name="com.jayhou.intent.action.START_NEW_TASK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -14,4 +14,15 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+    @Test
+    public void hashMap_performance() {
+        System.out.println("hashMap_performance");
+        new Thread() {
+            @Override
+            public void run() {
+                System.out.println("Hash Map start get");
+            }
+        }.start();
+    }
 }

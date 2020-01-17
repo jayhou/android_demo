@@ -1,0 +1,50 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button
+        android:id="@+id/start_activity1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity 1" />
+
+    <Button
+        android:id="@+id/start_activity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity 2" />
+
+    <Button
+        android:id="@+id/start_activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity 3" />
+
+    <Button
+        android:id="@+id/start_single_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Single Top" />
+
+    <Button
+        android:id="@+id/start_single_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Single Task" />
+
+    <Button
+        android:id="@+id/start_single_task2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Single Task2" />
+
+    <Button
+        android:id="@+id/start_single_instance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Single Instance"/>
+
+    <Button
+        android:id="@+id/start_activity_as_new_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Activity As New Task"/>
+
+</merge>
