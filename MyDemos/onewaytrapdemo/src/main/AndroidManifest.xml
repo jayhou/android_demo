@@ -16,6 +16,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service
+            android:name=".RemoteService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="action.test.remote.call"/>
+            </intent-filter>
+        </service>
+        <service android:name=".RemoteService2"
+            android:process=":remote2">
+            <intent-filter>
+                <action android:name="action.test.remote.call2"/>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
